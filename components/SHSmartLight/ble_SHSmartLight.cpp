@@ -15,7 +15,7 @@ namespace sh_smart_light {
         ESP_LOGCONFIG(TAG, "  Brightness: %f", brightness_);
         ESP_LOGCONFIG(TAG, "  Color Temp: %f", color_temperature_);
         ESP_LOGCONFIG(TAG, "  Minimum Brightness: %d", min_brightness_);
-        ESP_LOGCONFIG(TAG, "  Transmission Duration: %u millis", tx_duration_);
+        ESP_LOGCONFIG(TAG, "  Transmission Duration: %lu millis", tx_duration_);
     }
 
     void ShSmartLightOutput::write_state(light::LightState *state)
